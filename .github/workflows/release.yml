@@ -80,7 +80,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes musl-tools
           echo 'CC=musl-gcc' >> "$GITHUB_ENV"
-          echo 'RUSTFLAGS=-C linker=musl-gcc -C target-feature=+crt-static' >> "$GITHUB_ENV"
       - name: Build archive
         run: python scripts/grammars.py build --target ${{ matrix.target }}
       - name: Parse with every grammar on the target host

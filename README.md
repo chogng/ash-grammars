@@ -72,7 +72,7 @@ Each static-library job loads and parses with all 48 grammars on its target
 host. Windows ARM64 receives a cross-target link check. The WASM job loads and
 parses with all 48 modules in `web-tree-sitter`. Archive tests reject tampering,
 traversal and links. Release aggregation requires every target and the WASM
-archive; only successful tag builds can publish.
+archive; only successful release runs can publish.
 
 ## Update the inventory
 
