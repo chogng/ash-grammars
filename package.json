@@ -1,0 +1,8 @@
+{
+  "name": "ash-grammars-validation",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "web-tree-sitter": "0.26.11"
+  }
+}

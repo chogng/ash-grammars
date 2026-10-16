@@ -1,0 +1,6 @@
+tree-sitter-scss 1.0.0
+SPDX license declaration: MIT
+Source: https://github.com/tree-sitter-grammars/tree-sitter-scss at 9ab738d22bb248771d42e8678d1a307d14990df1
+Authors: Amaan Qureshi <amaanq12@gmail.com>
+The pinned source declares this license in Cargo.toml and supplies no separate license file.
+The source snapshot preserves that original manifest.

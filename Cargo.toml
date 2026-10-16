@@ -1,0 +1,22 @@
+[package]
+name = "ash-grammars"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Precompiled, pinned Tree-sitter grammars for Ash"
+repository = "https://github.com/chogng/ash-grammars"
+links = "ash_grammars"
+build = "build.rs"
+
+[dependencies]
+tree-sitter-language = "=0.1.7"
+
+[dev-dependencies]
+tree-sitter = "=0.26.11"
+
+[build-dependencies]
+serde_json = "1"
+sha2 = "0.10"
+
+[workspace]
+exclude = [".build/producer"]

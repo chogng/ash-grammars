@@ -1,0 +1,6 @@
+tree-sitter-diff 0.1.0
+SPDX license declaration: MIT
+Source: https://github.com/tree-sitter/tree-sitter-diff at 4867e8470e1b0ad7364c4e3ffab762c361bbb635
+Authors: Michael Davis <mcarsondavis@gmail.com>
+The pinned source declares this license in Cargo.toml and supplies no separate license file.
+The source snapshot preserves that original manifest.

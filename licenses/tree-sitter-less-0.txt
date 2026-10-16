@@ -1,0 +1,6 @@
+tree-sitter-less 1.0.0
+SPDX license declaration: MIT
+Source: https://github.com/jimliang/tree-sitter-less at b95f7e9780be5c9c191bb478054106253f04acb9
+Authors: Jimliang <jimlianglinux@gmail.com>
+The pinned source declares this license in Cargo.toml and supplies no separate license file.
+The source snapshot preserves that original manifest.
