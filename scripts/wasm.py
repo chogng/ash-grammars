@@ -20,9 +20,11 @@ def build_wasm(sdk: Path) -> None:
     files = {}
     manifest = {}
     for grammar in lock["grammars"]:
-        directory = sources[grammar["crate"]] / grammar["root"]
-        staging = ROOT / ".build/wasm-sources" / grammar["name"]
-        shutil.copytree(directory, staging, dirs_exist_ok=True)
+        # Keep shared scanner includes at their upstream package-relative paths
+        # (PHP, TypeScript and XML have headers outside the grammar subdirectory).
+        package = ROOT / ".build/wasm-sources" / grammar["name"]
+        shutil.copytree(sources[grammar["crate"]], package, dirs_exist_ok=True)
+        staging = package / grammar["root"]
         parser = staging / "src/parser.c"
         if grammar["wasm"].get("splitLexer"):
             subprocess.run(
