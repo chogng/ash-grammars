@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "treeSitterAbi": {
     "minimum": 13,
     "maximum": 15
@@ -665,7 +665,7 @@
     "tree-sitter-properties": {
       "version": "0.3.0",
       "archive": "tree-sitter-properties-0.3.0.tar.gz",
-      "sha256": "3ecbb0769b8a6b62abe77ffad68be0e4d474d591180b4f63bef655026b7d923e",
+      "sha256": "ea010a1fe2cca8acbe12e88cec4c90b220ae7eac109d08ffc564f03e427b0b71",
       "origin": "registry+https://github.com/rust-lang/crates.io-index",
       "license": "MIT",
       "files": {
@@ -682,11 +682,14 @@
         "src/grammar.json": "9bbfa79b824fef103dc748bb6e125168d187a2bbb0ab68637d59b28aa3e42500",
         "src/node-types.json": "9c95590fe10ff394a4c5fdb1f6633ff2598e5a408051a76ec640f00c9de7b40c",
         "src/parser.c": "cbf0955b2e4752814f8e22eb496edbc3e06a231338edf8d5341f161df050a3ff",
-        "src/scanner.c": "28695124310dee60ae3cfcd18445e3e4d7aba6e307fd152c375ea2b929115068",
+        "src/scanner.c": "c02f35dbd74c05dad87daa7e83cb5f7307966979f576b546bb38d20e1998232c",
         "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
         "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
         "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
-      }
+      },
+      "patches": [
+        "Per-instance EOF state and initialized serialization; see tests/properties_scanner.c."
+      ]
     },
     "tree-sitter-java": {
       "version": "0.23.5",

@@ -1,6 +1,6 @@
 [package]
 name = "ash-grammars"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 description = "Precompiled, pinned Tree-sitter grammars for Ash"
