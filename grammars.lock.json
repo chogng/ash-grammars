@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "treeSitterAbi": {
     "minimum": 13,
     "maximum": 15
@@ -1349,6 +1349,33 @@
         "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2",
         "tree-sitter.json": "4b608f067cf0953508a8574d455cdc928b446f175f967a13d9fc5f8ab0183191"
       }
+    },
+    "tree-sitter-zig": {
+      "version": "1.1.2",
+      "archive": "tree-sitter-zig-1.1.2.tar.gz",
+      "sha256": "76fafe5e12b65dbcbeff55b81db601b8182155dabfc06b2aeb6049de38f9ab9d",
+      "origin": "git+https://github.com/tree-sitter-grammars/tree-sitter-zig?rev=6479aa13f32f701c383083d8b28360ebd682fb7d#6479aa13f32f701c383083d8b28360ebd682fb7d",
+      "license": "MIT",
+      "files": {
+        "Cargo.toml": "93fc2067cf6a6e8e2230af484cddfc64a6052f70b2fbb2488ae59f30b530b1ff",
+        "LICENSE": "0eea8dc45e89deeb03c7799bbbc7b4688f365fb274562f4540ecfebdea82e727",
+        "README.md": "a466d7c9ce6f3ab4ae372612a840ab55d59dd737c4d19461b3959a7ac08519cc",
+        "bindings/rust/build.rs": "566533d0ee94ad30ba45edda309fd677105731b45bc7d6c0441ff73dfcd46ac1",
+        "bindings/rust/lib.rs": "55347d27accff9ce7126d553e127ddaa84907fcdc255461f4c98a23a6936b627",
+        "grammar.js": "8e1a02b8847d5d99599dd1b2fc1dafc005bf5ce69d15356a06a0ff1711a432e3",
+        "queries/folds.scm": "53b983a97e1f73efd1e911ec64a4e89e822acf5d2ecf6a4461409aa6ded11af4",
+        "queries/highlights.scm": "70e39a7151fbbd0a2f6e340d7ae81dcc9ba6ec8a863d60ede8196ba17f9c8bcb",
+        "queries/indents.scm": "f2b6ad718383b3de29ea930d95f6c7b7035fe0ad454a0b6d48a206e4d5f35bfe",
+        "queries/injections.scm": "6c68bd360ae39e7e04e64ca647d925a0eae1dc9ce98de6088b8af34956f5c6a0",
+        "queries/locals.scm": "a2d345afc59d9a9b514984f9101030bfb774631f2e4ae2ee4ace83dbb3171be5",
+        "src/grammar.json": "c8c9c3e2e60f9b7f6ab149ff106dcaee7ab94ce5a5d1fd5ff724fbb9a403cb5a",
+        "src/node-types.json": "cde02894ba66ed43167aa5f5f80b28c8941361e249aa3f22c29223384d80adc2",
+        "src/parser.c": "d6975b3bcbcaae6a393850e55a2547dff52cf187e870c75316304b8401e14d34",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2",
+        "tree-sitter.json": "7e38f4afc84b449f2ceaf3a0da491b8d4bc6b35348020b63311f0d40b54b5041"
+      }
     }
   },
   "grammars": [
@@ -1691,6 +1718,13 @@
       "crate": "tree-sitter-yaml",
       "root": ".",
       "symbol": "tree_sitter_yaml",
+      "wasm": {}
+    },
+    {
+      "name": "zig",
+      "crate": "tree-sitter-zig",
+      "root": ".",
+      "symbol": "tree_sitter_zig",
       "wasm": {}
     }
   ]

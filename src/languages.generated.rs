@@ -50,6 +50,7 @@ unsafe extern "C" {
     fn tree_sitter_xml() -> *const ();
     fn tree_sitter_dtd() -> *const ();
     fn tree_sitter_yaml() -> *const ();
+    fn tree_sitter_zig() -> *const ();
 }
 
 /// Grammar identifiers provided by the matching platform archive.
@@ -102,6 +103,7 @@ pub const GRAMMARS: &[&str] = &[
     "xml",
     "dtd",
     "yaml",
+    "zig",
 ];
 
 /// Returns a process-lifetime language function for a bundled grammar.
@@ -155,6 +157,7 @@ pub fn language(name: &str) -> Option<LanguageFn> {
         "xml" => Some(unsafe { LanguageFn::from_raw(tree_sitter_xml) }),
         "dtd" => Some(unsafe { LanguageFn::from_raw(tree_sitter_dtd) }),
         "yaml" => Some(unsafe { LanguageFn::from_raw(tree_sitter_yaml) }),
+        "zig" => Some(unsafe { LanguageFn::from_raw(tree_sitter_zig) }),
         _ => None,
     }
 }

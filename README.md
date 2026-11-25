@@ -1,7 +1,7 @@
 # Ash grammars
 
 Pinned Tree-sitter grammars compiled ahead of Ash's product builds. A release
-contains 48 parsers as eight platform static-library archives, a portable WASM
+contains 49 parsers as eight platform static-library archives, a portable WASM
 archive, a machine-readable artifact manifest and SHA-256 checksums. Consumers
 link prepared libraries; ordinary Cargo builds never compile grammar C.
 
@@ -68,9 +68,9 @@ npm ci --ignore-scripts
 node scripts/check-wasm.mjs
 ```
 
-Each static-library job loads and parses with all 48 grammars on its target
+Each static-library job loads and parses with all 49 grammars on its target
 host. Windows ARM64 receives a cross-target link check. The WASM job loads and
-parses with all 48 modules in `web-tree-sitter`. Archive tests reject tampering,
+parses with all 49 modules in `web-tree-sitter`. Archive tests reject tampering,
 traversal and links. Release aggregation requires every target and the WASM
 archive; only successful release runs can publish.
 
